@@ -76,7 +76,6 @@ function validate() {
     userNum = prompt('Please enter a different number...');
   }
 }
-
 // validate();
 
 // When you are done with the above, improve the program so that the terminating number is between 50 and 100.
@@ -87,7 +86,6 @@ function newValidate() {
     userNum = prompt('Please enter a different number...');
   }
 }
-
 // newValidate();
 
 //---------------------------------------------
@@ -101,6 +99,20 @@ function timesTable() {
     console.log(`${userNum} x ${i} = ${userNum * i}`);
   };
 }
+// timesTable();
 
-timesTable();
 // When you are done, improve the program so it only accepts numbers between 2 and 9 (use the previous exercise as a blueprint).
+
+function newTimesTable() {
+  let userNum = prompt('Pick a number between 2 and 9...');
+
+  while ((userNum >= 9) || (userNum <= 2)) {
+    userNum = prompt('Error: please enter a number between 2 and 9...');
+  }
+
+  for (let i = 0; i <= 12; i++) {
+    console.log(`${userNum} x ${i} = ${userNum * i}`);
+  };
+}
+
+// newTimesTable();
