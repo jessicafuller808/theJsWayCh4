@@ -125,13 +125,12 @@ function newTimesTable() {
 
 function yesNorNo() {
   let userAnswer = prompt('Yes or no?');
-  userAnswer = JSON.stringify(userAnswer);
 
   while ((userAnswer !== "yes") || (userAnswer !== "no")) {
     userAnswer = prompt('You can only choose yes or no...');
-    userAnswer = JSON.stringify(userAnswer);
   }
 }
+
 
 //---------------------------------------------
 // == Fizz Buzz ==
@@ -142,3 +141,19 @@ function yesNorNo() {
 // It shows "Buzz" instead if the number is divisible by 5 and not by 3.
 
 // When it's done, improve it so that the program shows "FizzBuzz" instead for numbers divisible both by 3 and by 5.
+
+function fizzBuzz() {
+  for (let i = 0; i <= 100; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
+      console.log(i + ' FizzBuzz');
+    } else if (i % 3 === 0) {
+      console.log(i + ' Fizz');
+    } else if (i % 5 === 0 && i % 3 !== 0) {
+      console.log(i + ' Buzz');
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+// fizzBuzz();
