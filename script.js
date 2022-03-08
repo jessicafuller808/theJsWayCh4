@@ -121,6 +121,18 @@ function newTimesTable() {
 // == Neither Yes nor No ==
 // Write a program that plays "neither yes, nor no" with the user. Specifically, the programs asks the user to enter text until either "yes" or "no" is typed, which ends the game.
 
+//NEED TO REVISIT, having trouble figuring it out.
+
+function yesNorNo() {
+  let userAnswer = prompt('Yes or no?');
+  userAnswer = JSON.stringify(userAnswer);
+
+  while ((userAnswer !== "yes") || (userAnswer !== "no")) {
+    userAnswer = prompt('You can only choose yes or no...');
+    userAnswer = JSON.stringify(userAnswer);
+  }
+}
+
 //---------------------------------------------
 // == Fizz Buzz ==
 // Write a program that shows all numbers between 1 and 100 with the following exceptions:
