@@ -121,16 +121,16 @@ function newTimesTable() {
 // == Neither Yes nor No ==
 // Write a program that plays "neither yes, nor no" with the user. Specifically, the programs asks the user to enter text until either "yes" or "no" is typed, which ends the game.
 
-//NEED TO REVISIT, having trouble figuring it out.
 
 function yesNorNo() {
-  let userAnswer = prompt('Yes or no?');
+  userAnswer = prompt('Yes or no?');
 
-  while ((userAnswer !== "yes") || (userAnswer !== "no")) {
-    userAnswer = prompt('You can only choose yes or no...');
+  while ((userAnswer !== "yes") && (userAnswer !== "no")) {
+    userAnswer = prompt('Please try entering "yes" or "no"...');
   }
 }
 
+//yesNorNo();
 
 //---------------------------------------------
 // == Fizz Buzz ==
